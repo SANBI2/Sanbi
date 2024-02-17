@@ -1,0 +1,454 @@
+body {
+  top: 0;
+  margin: 0px;
+  background-color: #141638;
+
+}
+
+.nav ul {
+  display: flex;
+  margin: auto;
+  padding: 1vw;
+  align-items: center;
+  justify-content: space-around;
+  text-decoration: none;
+  background-color: rgb(13, 70, 70);
+  box-shadow: #e89990a7 2px 1px 10px 1px;
+
+}
+
+.nav ul li {
+  display: flex;
+  margin: auto;
+  align-items: center;
+  justify-content: space-between;
+  text-decoration: none;
+}
+
+.nav ul li a {
+  font-size: .8rem;
+  width: auto;
+  padding: 10%;
+  text-decoration: none;
+  border-radius: 10%;
+  box-shadow: salmon 2px 2px 10px 5px;
+  color: aliceblue;
+  font-weight: 100;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  animation: glow infinite 1s;
+}
+
+.nav ul li a:hover {
+  background: #000000;
+  color: chartreuse;
+}
+
+.menu img {
+  height: 50px;
+  display: block;
+}
+li a img{
+  height: 10%;
+}
+.cover {
+  background-image: url(banner2.png);
+  background-size: cover;
+  background-color: rgb(45, 134, 212);
+  background-blend-mode: darken;
+  height: 100vh;
+  opacity: 60;
+  display: flex;
+  justify-content: center;
+}
+
+.cover p {
+  margin-top: 25vh;
+  color: rgb(246, 247, 243);
+  font-family: "Protest Strike", sans-serif;
+  font-weight: 100;
+  font-style: normal;
+  font-size: .9rem;
+}
+
+.cover h1 {
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  margin-top: 90px;
+  color: rgb(246, 247, 243);
+  opacity: 100;
+  font-family: "Protest Strike", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 3rem;
+}
+
+.service {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start
+}
+
+.service h3 {
+  font-family: "Protest Strike", sans-serif;
+  font-size: 2rem;
+  color: cyan;
+}
+
+ .service-list {
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+  padding: 2vw;
+  align-items: center;
+  justify-content: space-around;
+  text-decoration: none;
+}
+ ul li {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  text-decoration: none;
+}
+
+.myCard {
+  background-color: transparent;
+  height: 250px;
+  width: 200px;
+  padding: 1%;
+  perspective: 1000px;
+}
+.myCard img {
+  height: 30%;
+  }
+
+.myCard::marker {
+  display: none;
+  text-decoration: none;
+  background-color: transparent;
+}
+
+
+.define {
+  font-size: 1em;
+  font-weight: 500;
+  text-align: center;
+  padding: 2%;
+  margin: 0;
+}
+
+.innerCard {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  transition: transform 0.8s;
+  transform-style: preserve-3d;
+  cursor: pointer;
+}
+
+.myCard:hover .innerCard {
+  transform: rotateY(180deg);
+}
+
+.frontSide,
+.backSide {
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
+  width: 100%;
+  height: 100%;
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+  border: 1px solid rgba(255, 255, 255, 0.8);
+  border-radius: 1rem;
+  color: white;
+  box-shadow: 0 0 0.3em rgba(255, 255, 255, 0.5);
+  font-weight: 600;
+}
+
+.frontSide,
+.frontSide::before {
+  background: linear-gradient(43deg, rgb(65, 88, 208) 0%, rgb(200, 80, 192) 46%, rgb(255, 204, 112) 100%);
+}
+
+.backSide,
+.backSide::before {
+  background-image: linear-gradient(160deg, #0093E9 0%, #80D0C7 100%);
+}
+
+.backSide {
+  transform: rotateY(180deg);
+}
+
+.frontSide::before,
+.backSide::before {
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  content: '';
+  width: 110%;
+  height: 110%;
+  position: absolute;
+  z-index: -1;
+  border-radius: 1em;
+  filter: blur(20px);
+  animation: animate 5s linear infinite;
+}
+
+@keyframes animate {
+  0% {
+    opacity: 0.3;
+  }
+
+  80% {
+    opacity: 1;
+  }
+
+  100% {
+    opacity: 0.3;
+  }
+}
+
+.about {
+  display: flex;
+  justify-content: space-around;
+  width: 100vw;
+  height: 150vh;
+  padding-top: 2rem;
+  background-color: #333;
+  box-shadow: inset grey 5px 2px 100px;
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  max-width: 350px;
+  padding: 20px;
+  border-radius: 20px;
+  position: relative;
+  background-color: #1a1a1a;
+  color: #fff;
+  border: 1px solid #333;
+}
+
+.title {
+  font-size: 28px;
+  font-weight: 600;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  letter-spacing: -1px;
+  position: relative;
+  display: flex;  
+  align-items: center;
+  padding-left: 5%;
+  color: #cddfe4;
+}
+
+
+
+.message,
+.signin {
+  font-size: 14.5px;
+  color: rgba(255, 255, 255, 0.7);
+}
+
+.signin {
+  text-align: center;
+}
+
+.signin a:hover {
+  text-decoration: underline royalblue;
+}
+
+.signin a {
+  color: #00bfff;
+}
+
+.flex {
+  display: flex;
+  width: 100%;
+  gap: 1.5rem;
+}
+
+.form label {
+  position: relative;
+}
+
+.form label .input {
+  background-color: #333;
+  color: #fff;
+  width: 100%;
+  padding: 20px 05px 05px 10px;
+  outline: 0;
+  border: 1px solid rgba(105, 105, 105, 0.397);
+  border-radius: 10px;
+}
+
+.form label .input+span {
+  color: rgba(255, 255, 255, 0.5);
+  position: absolute;
+  left: 10px;
+  top: 0px;
+  font-size: 0.9em;
+  cursor: text;
+  transition: 0.3s ease;
+}
+
+.form label .input:placeholder-shown+span {
+  top: 12.5px;
+  font-size: 0.9em;
+}
+
+.form label .input:focus+span,
+.form label .input:valid+span {
+  color: #00bfff;
+  top: 0px;
+  font-size: 0.7em;
+  font-weight: 600;
+}
+
+.input {
+  font-size: medium;
+}
+
+.submit {
+  border: none;
+  outline: none;
+  padding: 10px;
+  border-radius: 10px;
+  color: #fff;
+  font-size: 16px;
+  transform: .3s ease;
+  background-color: #00bfff;
+}
+
+.submit:hover {
+  background-color: #00bfff96;
+}
+
+@keyframes pulse {
+  from {
+    transform: scale(0.9);
+    opacity: 1;
+  }
+
+  to {
+    transform: scale(1.8);
+    opacity: 0;
+  }
+}
+
+/* button styling */
+.btn {
+  --border-color: linear-gradient(-45deg, #ffae00, #7e03aa, #00fffb);
+  --border-width: .125em;
+  --curve-size: .5em;
+  --blur: 30px;
+  --bg: #080312;
+  --color: #afffff;
+  color: var(--color);
+  /* use position: relative; so that BG is only for .btn */
+  position: relative;
+  isolation: isolate;
+  display: inline-grid;
+  place-content: center;
+  padding: .5em 1.5em;
+  font-size: 17px;
+  border: 0;
+  text-transform: uppercase;
+  box-shadow: 10px 10px 20px rgba(0, 0, 0, .6);
+  clip-path: polygon(
+      /* Top-left */
+      0% var(--curve-size),
+
+      var(--curve-size) 0,
+      /* top-right */
+      100% 0,
+      100% calc(100% - var(--curve-size)),
+
+      /* bottom-right 1 */
+      calc(100% - var(--curve-size)) 100%,
+      /* bottom-right 2 */
+      0 100%);
+  transition: color 250ms;
+}
+
+.btn::after,
+.btn::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+}
+
+.btn::before {
+  background: var(--border-color);
+  background-size: 300% 300%;
+  animation: move-bg7234 5s ease infinite;
+  z-index: -2;
+}
+
+@keyframes move-bg7234 {
+  0% {
+    background-position: 31% 0%
+  }
+
+  50% {
+    background-position: 70% 100%
+  }
+
+  100% {
+    background-position: 31% 0%
+  }
+}
+
+.btn::after {
+  background: var(--bg);
+  z-index: -1;
+  clip-path: polygon(
+      /* Top-left */
+      var(--border-width) calc(var(--curve-size) + var(--border-width) * .5),
+
+      calc(var(--curve-size) + var(--border-width) * .5) var(--border-width),
+
+      /* top-right */
+      calc(100% - var(--border-width)) var(--border-width),
+
+      calc(100% - var(--border-width)) calc(100% - calc(var(--curve-size) + var(--border-width) * .5)),
+
+      /* bottom-right 1 */
+      calc(100% - calc(var(--curve-size) + var(--border-width) * .5)) calc(100% - var(--border-width)),
+      /* bottom-right 2 */
+      var(--border-width) calc(100% - var(--border-width)));
+  transition: clip-path 500ms;
+}
+
+.btn:where(:hover, :focus)::after {
+  clip-path: polygon(
+      /* Top-left */
+      calc(100% - var(--border-width)) calc(100% - calc(var(--curve-size) + var(--border-width) * 0.5)),
+
+      calc(100% - var(--border-width)) var(--border-width),
+
+      /* top-right */
+      calc(100% - var(--border-width)) var(--border-width),
+
+      calc(100% - var(--border-width)) calc(100% - calc(var(--curve-size) + var(--border-width) * .5)),
+
+      /* bottom-right 1 */
+      calc(100% - calc(var(--curve-size) + var(--border-width) * .5)) calc(100% - var(--border-width)),
+
+      /* bottom-right 2 */
+      calc(100% - calc(var(--curve-size) + var(--border-width) * 0.5)) calc(100% - var(--border-width)));
+  transition: 200ms;
+}
+
+.btn:where(:hover, :focus) {
+  color: #fff;
+}
