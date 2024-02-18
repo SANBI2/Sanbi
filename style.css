@@ -4,7 +4,7 @@ body {
   background-color: #141638;
 
 }
-
+/*=======================================LISTS==========================================*/
 .nav ul {
   display: flex;
   margin: auto;
@@ -50,7 +50,7 @@ body {
 li a img{
   height: 10%;
 }
-.cover {
+#home {
   background-image: url(banner2.png);
   background-size: cover;
   background-color: rgb(45, 134, 212);
@@ -61,7 +61,7 @@ li a img{
   justify-content: center;
 }
 
-.cover p {
+#home p {
   margin-top: auto;
   color: rgb(246, 247, 243);
   font-family: "Protest Strike", sans-serif;
@@ -70,7 +70,7 @@ li a img{
   font-size: .9rem;
 }
 
-.cover h1 {
+#home h1 {
   align-items: center;
   justify-content: center;
   margin-top: 90px;
@@ -82,7 +82,7 @@ li a img{
   font-size: 3rem;
 }
 
-.service {
+#service {
   height: 100vh;
   display: flex;
   flex-direction: column;
@@ -90,7 +90,7 @@ li a img{
   justify-content: flex-start
 }
 
-.service h3 {
+#service h3 {
   font-family: "Protest Strike", sans-serif;
   font-size: 2rem;
   color: cyan;
@@ -213,7 +213,7 @@ li a img{
   }
 }
 
-.about {
+#about {
   display: flex;
   justify-content: space-around;
   width: 100vw;
