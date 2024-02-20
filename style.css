@@ -237,7 +237,6 @@ li a img{
 }
 .info-wrap{
     width:35%;
-    height: 551px;
     padding: 40px;
     float: left;
     display: block;
@@ -305,7 +304,6 @@ li a img{
     color: #000000;
 }
 .form-wrap{
-    width:65%;
     float: right;
     padding:40px 25px 35px 25px;
     border-radius: 0px 30px 30px 0px;
