@@ -322,12 +322,7 @@ li a img{
   color: #fff;
 }
 /*===========================================================ABOUT_US=======================================================*/
-#about {
-   padding: 0;
-    margin: 0;
-    box-sizing: border-box;
-   background: #000718;
-}
+
 ul {
     margin: 0px;
     padding: 0px;
