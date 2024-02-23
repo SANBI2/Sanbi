@@ -323,13 +323,10 @@ li a img{
 }
 /*===========================================================ABOUT_US=======================================================*/
 
-ul {
-    margin: 0px;
-    padding: 0px;
-}
 .footer-section {
   background: #151414;
   position: relative;
+  width: 100vw;
 }
 .footer-cta {
   border-bottom: 1px solid #373636;
@@ -407,6 +404,9 @@ ul {
 .google-bg{
   background: #DD4B39;
 }
+.instagram-bg{
+  background: #DD4B39;
+}
 .footer-widget-heading h3 {
   color: #fff;
   font-size: 20px;
@@ -482,4 +482,12 @@ ul {
 .footer-menu li a {
   font-size: 14px;
   color: #878787;
+}
+
+
+
+/*=============================CONTACT_US============================*/
+footer{
+  margin-top: 70px;
+  color: #00fffb;
 }
