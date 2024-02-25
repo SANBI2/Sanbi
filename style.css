@@ -12,9 +12,11 @@
     text-decoration: none;
     background-color: rgb(0, 0, 0);
     /* box-shadow: #6d504d5c 2px 1px 10px 1px; */
-  
   }
-  
+  .logo:hover{
+filter: drop-shadow(5px 5px 15px #ffd43b );
+cursor: pointer;
+  }
   .nav ul li {
     position: static;
     display: flex;
@@ -44,7 +46,35 @@
     color: rgb(4, 8, 0);
     box-shadow: rgb(255, 66, 45) 2px 2px 10px 5px;
   }
-  
+  .nav ul li input {
+    padding: 5px;
+    background-color: rgb(243, 222, 120);
+    border-radius: 15px;
+  }
+  .search{
+    height: 30px;
+    margin: 10px;
+    border-radius: 15px;
+    aspect-ratio: 1/1;
+  }
+  .login{
+    padding: 5px;
+    border-radius: 10px;
+    margin: 10px;
+    border: none;
+    background-color: yellow;
+    box-shadow: inset 3px 3px 10px maroon;
+  }
+  .login:hover{
+    padding: 5px;
+    color: white;
+    border-radius: 10px;
+    margin: 10px;
+    transition: ease .5s;
+    background-color: rgb(21, 5, 130);
+    box-shadow: inset 3px 3px 10px rgba(204, 202, 79, 0.719);
+  }
+
   .menu img {
     height: 50px;
     display: block;
