@@ -1,19 +1,20 @@
 body {
   top: 0;
   margin: 0px;
-  background-color: #141638;
+  background-color: #330e0ea5;
 
 }
 /*=======================================LISTS==========================================*/
 .nav ul {
   display: flex;
-  margin: auto;
+  width: 100vw;
+  margin: 0;
   padding: 1vw;
   align-items: center;
   justify-content: space-around;
   text-decoration: none;
-  background-color: rgb(13, 70, 70);
-  box-shadow: #e89990a7 2px 1px 10px 1px;
+  background-color: rgba(78, 5, 51, 0.589);
+  /* box-shadow: #6d504d5c 2px 1px 10px 1px; */
 
 }
 
@@ -39,8 +40,9 @@ body {
 }
 
 .nav ul li a:hover {
-  background: #000000;
-  color: chartreuse;
+  background: #aa89dc;
+  color: rgb(4, 8, 0);
+  box-shadow: rgb(255, 66, 45) 2px 2px 10px 5px;
 }
 
 .menu img {
@@ -49,37 +51,6 @@ body {
 }
 li a img{
   height: 10%;
-}
-#home {
-  background-image: url(https://www.ict.eu/sites/corporate/files/images/Cyber%20Security_2.jpg);
-  background-size: cover;
-  background-color: rgb(45, 134, 212);
-  background-blend-mode: darken;
-  height: 100vh;
-  opacity: 60;
-  display: flex;
-  justify-content: center;
-}
-
-#home p {
-  margin-top: auto;
-  color: rgb(246, 247, 243);
-  font-family: "Protest Strike", sans-serif;
-  font-weight: 100;
-  font-style: normal;
-  font-size: .9rem;
-}
-
-#home h1 {
-  align-items: center;
-  justify-content: center;
-  margin-top: 90px;
-  color: rgb(246, 247, 243);
-  opacity: 100;
-  font-family: "Protest Strike", sans-serif;
-  font-weight: 400;
-  font-style: normal;
-  font-size: 3rem;
 }
 
 #service {
@@ -90,9 +61,9 @@ li a img{
   justify-content: flex-start
 }
 
-#service h3 {
+#service h1 {
   font-family: "Protest Strike", sans-serif;
-  font-size: 2rem;
+  font-size: 3rem;
   color: cyan;
 }
 
@@ -212,8 +183,6 @@ li a img{
     opacity: 0.3;
   }
 }
-
-/*=============================================================BUTTON=======================================*/
 /* button styling */
 .btn {
   --border-color: linear-gradient(-45deg, #ffae00, #7e03aa, #00fffb);
@@ -320,8 +289,209 @@ li a img{
 
 .btn:where(:hover, :focus) {
   color: #fff;
+ 
 }
-/*===========================================================ABOUT_US=======================================================*/
+/*================================MEDIA=============================*/
+#media h1 {
+  font-family: "Protest Strike", sans-serif;
+  font-size: 3rem;
+  color: cyan;
+  padding: 50px;
+}
+/*================================CONTACT_US=============================*/
+#section-wrapper{
+  width: 100%;
+  padding: 10px;
+  margin-top: 70px;
+}
+
+@media only screen and (max-width: 600px) {
+  .box-wrapper{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+  }
+}
+
+.box-wrapper{
+  position: relative;
+  display: flex;
+  width:80vw;
+  height: 100%;
+  margin-top:35px;
+  border-radius: 30px;
+  margin-left: 150px;
+}
+.info-wrap{
+  width:35%;
+  padding: 100px;
+  float: left;
+  display: block;
+  border-radius: 30px 0px 0px 30px;
+  background: linear-gradient(144deg, rgba(126,39,156,1) 0%, rgba(49,39,157,1) 49%);
+  color: #fff;
+}
+.info-title{
+  text-align: left;
+  font-size: 28px;
+  letter-spacing: 0.5px;
+}
+.info-sub-title{
+  font-size: 18px;
+  font-weight: 300;
+  margin-top: 17px;
+  letter-spacing: 0.5px;
+  line-height: 26px;
+}
+.info-details {
+  float: left;
+  list-style: none;
+  margin: 5px;
+}
+
+
+
+.info-details li {
+  margin-top: 25px;
+  font-size: 18px;
+  color: #fff;
+}
+.info-details li i {
+  background: #F44770;
+  padding: 12px;
+  border-radius: 50%;
+  margin-right: 5px;
+  float: left;
+}
+.info-details li a {
+  color: #fff;
+  text-decoration: none;
+}
+.info-details li a:hover {
+  color: #F44770;
+}
+.social-icons {
+  list-style: none;
+  width: 100%;
+  display: flex;
+  float: left;
+  justify-content: center;
+  text-align: center;
+  margin: 20px 0px;
+}
+.social-icons li {
+  display: inline-block;
+}
+.social-icons li i {
+  background: #F44770;
+  color: #fff;
+  padding: 15px;
+  font-size: 20px;
+  border-radius: 22%;
+  margin: 0px 5px;
+  cursor: pointer;
+  transition: all .5s;
+}
+.social-icons li i:hover {
+  background: #fff;
+  color: #000000;
+}
+.form-wrap{
+  float: right;
+  padding:60px;
+  border-radius: 0px 30px 30px 0px;
+  background: #ecf0f3;
+}
+
+
+.form-title{
+  text-align: left;
+  margin-left: 15px;
+  font-size: 28px;
+  letter-spacing: 0.5px;
+}
+.form-fields{
+  display: table;
+  width: 100%;
+  padding: 10px;
+}
+.form-fields input,
+.form-fields textarea{
+  border: none;
+  outline:none;
+  background: none;
+  font-size: 18px;
+  color:#555;
+  padding: 20px 10px 20px 5px;
+  width:100%
+}
+.form-fields textarea{
+  height: 20px;
+  
+}
+.form-group{
+  width: 46%;
+  float: left;
+  margin: 14px 12px;
+  border-radius: 25px;
+  box-shadow: inset 8px 8px 8px #cbced1, inset -8px -8px 8px #ffffff;
+}
+.form-fields .form-group:last-child {
+  width: 96%;
+}
+.submit-button{
+  width: 96%;
+  height: 60px;
+  margin: 0px 12px;
+  border-radius: 30px;
+  font-size: 20px;;
+  font-weight: 700;
+  outline: none;
+  border:none;
+  cursor: pointer;
+  color:#fff;
+  text-align: center;
+  background: #F44770;
+  box-shadow: 3px 3px 8px #b1b1b1, -3px -3px 8px #ffffff;
+  transition: .5s;
+}
+.submit-button:hover{
+  background: #31279d;
+}
+
+
+/* Responsive css */
+
+@media only screen and (max-width: 767px) {
+  .box-wrapper{
+      width: 100%;
+  }
+  .info-wrap,
+  .form-wrap{
+      width: 100%;
+      height: inherit;
+      float: none;  
+  }
+  .info-wrap{
+      border-radius: 30px 30px 0px 0px;
+  }
+  .form-wrap{
+      border-radius: 0px 0px 30px 30px;
+  }
+  .form-group{
+      width: 100%;
+      float: none;
+      margin: 25px 0px;
+  }
+  .form-fields .form-group:last-child, 
+  .submit-button{
+      width: 100%;
+  }
+  .submit-button{
+      margin: 10px 0px;
+  }
+ 
+}
 
 .footer-section {
   background: #151414;
