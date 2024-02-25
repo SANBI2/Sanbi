@@ -60,14 +60,16 @@
     background-color: #000000;
     background-image: url(img/banner2.png);
     background-size: cover;
+    box-shadow: 10px 10px 50px #010a15 ;
+  
   }
-  .container{
+  .homecontainer{
     padding-top: 10%;
     justify-content: center;
     align-items: center;
     align-self: center;
   }
-  .container h1:nth-child(1) {
+  .homecontainer h1:nth-child(1) {
     color: #ffffff;
     font-family: 'Fira Code', monospace;
     font-weight: 800;
@@ -80,7 +82,7 @@
     animation: type 2s steps(40,end) forwards;
   }
   
-  .container h1:nth-child(2) {
+  .homecontainer h1:nth-child(2) {
     opacity: 0;
     font-family: "Work Sans", sans-serif;
     margin: 0 0 0 15%;
@@ -136,21 +138,26 @@
   }
   
 
-
-  #service {
-    height: 100vh;
+#service{
+  background-color: #002e5d;
+  box-shadow: 10px 10px 50px #001c3c ;
+  
+}
+  
+  .servicecontainer{
+    height: 80vh;
     display: flex;
-    flex-direction: column;
     align-items: center;
-    justify-content: space-evenly;
-    background-color: #080312;
-    text-align: left;
+    justify-content: space-between;
+    
   }
   
-  #service h1 {
-    font-family: "Protest Strike", sans-serif;
+  .serviceheading{
+    text-align: center;
+    color: pink;
+    stroke: grey 20px;
     font-size: 3rem;
-    color: cyan;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
   }
   
    .service-list {
@@ -171,8 +178,9 @@
   
   .myCard {
     background-color: transparent;
-    height: 250px;
+    /* height: 250px; */
     width: 200px;
+    aspect-ratio: 3/4;
     padding: 1%;
     perspective: 1000px;
   }
@@ -380,6 +388,8 @@
 
 
 #media{
+ padding: 2rem;
+  position: relative;
     height: 80vh;
 }
  
@@ -450,7 +460,7 @@
   }
   
   .social_icons i {
-    font-size: 1.5rem;
+    font-size: 2rem;
     cursor: pointer;
     background: #ddd;
     width: 50px;
@@ -461,7 +471,7 @@
     border-radius: 5px;
     transform: translateY(0);
     transition: all 0.5s ease-in-out;
-    color: #1c2833;
+    color: #2976be;
   }
   
   .social_icons i:hover {
@@ -597,6 +607,7 @@
   
     .social_icons i {
       font-size: 1rem;
+      color: red;
       width: 35px;
       height: 35px;
     }
