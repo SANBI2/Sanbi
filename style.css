@@ -2,6 +2,8 @@
     margin: 0;
     padding: 0;
 }
+
+/* =======================HEADING================================= */
 .nav ul {
     display: flex;
     padding: 1vw;
@@ -54,7 +56,7 @@
 
 
 
-
+/* =======================HOME================================= */
   #home{
     height: 90vh;
     background-color: #000000;
@@ -137,6 +139,9 @@
     }
   }
   
+
+
+/* =======================SERVICES================================= */
 
 #service{
   background-color: #002e5d;
@@ -387,6 +392,7 @@
   }
 
 
+  /* =======================MEDIA================================ */
 #media{
  padding: 2rem;
   position: relative;
@@ -394,7 +400,12 @@
 }
  
 
-.box {
+
+
+
+/* =======================FOOTER================================ */
+
+.footerbox {
     color: white;
     max-width: 1440px;
     background-color: rgb(18, 2, 2);
@@ -402,7 +413,7 @@
     padding: 0 calc(17.8px + 2rem);
   }
   
-  .box h2 {
+  .footerbox h2 {
     font-size: 5rem;
     color: #ddd;
     text-align: center;
@@ -433,6 +444,13 @@
     padding-bottom: 2rem;
     position: relative;
   }
+
+  .footer_headings ul li a:hover {
+    color: #b8e70e;
+    padding-bottom: 2rem;
+    position: relative;
+  }
+  
   
   .footer_headings::after {
     content: "";
@@ -473,9 +491,15 @@
     transition: all 0.5s ease-in-out;
     color: #2976be;
   }
+  svg{
+    color: red;
+    height: 30px;
+    padding: 5px;
+  }
   
-  .social_icons i:hover {
-    transform: translateY(-5px);
+  .social_icons a:hover {
+    transform: scale(1.2);
+    transition: ease 0.5s;
   }
   
   /* second sections */
@@ -544,9 +568,9 @@
     font-size: 0.9rem;
   }
   
-  .fourth_section button {
+  .contactbutton {
     display: block;
-    width: 100%;
+    width: 115%;
     outline: none;
     background: #e74c3c;
     border: none;
@@ -555,6 +579,11 @@
     cursor: pointer;
     border-radius: 5px;
     font-size: 0.9rem;
+  }
+  .contactbutton:hover{
+    box-shadow: inset 2px 2px 20px yellow;
+    transition: ease .2s;
+    box-shadow: 2px 2px 20px maroon;
   }
   
   .footer_txt {
@@ -575,12 +604,7 @@
       grid-gap: 4rem;
       padding: 3rem 0;
     }
-  
-    .social_icons i {
-      font-size: 1.3rem;
-      width: 45px;
-      height: 45px;
-    }
+
   
     footer {
       position: absolute;
@@ -605,16 +629,20 @@
       padding-bottom: 4rem;
     }
   
-    .social_icons i {
-      font-size: 1rem;
-      color: red;
-      width: 35px;
-      height: 35px;
-    }
-  
     footer {
       position: absolute;
       top: 30%;
     }
   }
+
+.footer_txt{
+  font-family: 'Arial Narrow Bold', sans-serif;
+  background-color: #001c3c;
+  font-stretch: extra-expanded;
+  color: #ffd43b;
+}
+.footer_txt a{
+  text-decoration: none;
+  color: #ffd43b;
+}
 
