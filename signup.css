@@ -6,7 +6,8 @@
 }
 
 body {
-	background: #f6f5f7;
+	/* background: #160127ef; */
+    background-image: linear-gradient(to right top, #311214, #211a1b, #350f18, #26010c, #520f24);
 	display: flex;
 	justify-content: center;
 	align-items: center;
@@ -15,14 +16,16 @@ body {
 	height: 100vh;
 	margin: -20px 0 50px;
 }
-
 h1 {
 	font-weight: bold;
 	margin: 0;
+    color: white;
 }
 
 h2 {
 	text-align: center;
+    color: white;
+    
 }
 
 p {
@@ -31,19 +34,30 @@ p {
 	line-height: 20px;
 	letter-spacing: 0.5px;
 	margin: 20px 0 30px;
+    color: white;
 }
 
 span {
 	font-size: 12px;
+    color: rgb(255, 255, 255);
 }
 
 a {
-	color: #333;
+	color: #877272;
 	font-size: 14px;
 	text-decoration: none;
 	margin: 15px 0;
 }
-
+a:hover {
+	color: #e5e90b;
+    background-color: #4f0416;
+	font-size: 14px;
+	text-decoration: none;
+	margin: 15px 0;
+    border:1px solid #e5e90b;
+    border-radius: 10px;
+    padding: 2px;
+}
 button {
 	border-radius: 20px;
 	border: 1px solid #FF4B2B;
@@ -56,6 +70,14 @@ button {
 	text-transform: uppercase;
 	transition: transform 80ms ease-in;
 }
+button:hover{
+	border-radius: 20px;
+    border: 2px solid wheat;
+	border: 1px solid #FF4B2B;
+	background-color: #671304;
+	color: #e5e90b;
+	
+}
 
 button:active {
 	transform: scale(0.95);
@@ -67,11 +89,17 @@ button:focus {
 
 button.ghost {
 	background-color: transparent;
-	border-color: #FFFFFF;
+    color: #e5e90b;
+	border-color: #71d90a;
 }
-
+button.ghost:hover {
+    background-image: linear-gradient(to right top, #da444f, #e23c57, #e93361, #f0286c, #f61a78);
+	background-color: transparent;
+	border-color: #e00404d8;
+    color: white;
+}
 form {
-	background-color: #FFFFFF;
+	background-image: linear-gradient(to right top, #150228, #190927, #1c1025, #1f1425, #211924);
 	display: flex;
 	align-items: center;
 	justify-content: center;
@@ -85,12 +113,13 @@ input {
 	background-color: #eee;
 	border: none;
 	padding: 12px 15px;
+    border-radius: 15px;
 	margin: 8px 0;
 	width: 100%;
 }
 
 .container {
-	background-color: #fff;
+	background-color: #170044;
 	border-radius: 10px;
   	box-shadow: 0 14px 28px rgba(0,0,0,0.25), 
 			0 10px 10px rgba(0,0,0,0.22);
@@ -160,13 +189,13 @@ input {
 }
 
 .overlay {
-	background: #FF416C;
-	background: -webkit-linear-gradient(to right, #FF4B2B, #FF416C);
-	background: linear-gradient(to right, #FF4B2B, #FF416C);
+	background: #600101;
+	background: -webkit-linear-gradient(to right, #4e0e02, #FF416C);
+	background: linear-gradient(to right, #3d0c03, #500013);
 	background-repeat: no-repeat;
 	background-size: cover;
 	background-position: 0 0;
-	color: #FFFFFF;
+	color: #d8df0b;
 	position: relative;
 	left: -100%;
 	height: 100%;
@@ -243,10 +272,10 @@ footer p {
 }
 
 footer i {
-    color: red;
+    color: rgb(145, 205, 5);
 }
 
 footer a {
-    color: #3c97bf;
+    color: #8983ff;
     text-decoration: none;
 }

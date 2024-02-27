@@ -8,14 +8,18 @@
   position: sticky;
   top: 0;
   z-index: 1;
+  background-image: linear-gradient(to bottom, #780000, #6b000b, #5d0012, #4e0115, #3e0415);
+  
 }
+
 .nav ul {
     display: flex;
     padding: 1vw;
     align-items: center;
     justify-content: space-around;
     text-decoration: none;
-    background-color: rgb(0, 0, 0);
+    background-image: linear-gradient(to bottom, #360404, #2e0609, #27070c, #1f070d, #15070b);
+    /* background-color: rgb(0, 0, 0); */
     /* box-shadow: #6d504d5c 2px 1px 10px 1px; */
   }
   .logo:hover{
@@ -34,53 +38,97 @@ cursor: pointer;
   .nav ul li a {
     font-size: .8rem;
     width: auto;
-    padding: 10%;
+    padding: 5px;
+    border-radius: 20px;
+    border: 2px solid #ff7861;
+    background-color: #f92a2a;
+    color: #f4f4f4;
+    font-size: 12px;
+    font-weight: bold;
+    padding: 12px 12px;
+    letter-spacing: 1px;
+    text-transform: uppercase;
     text-decoration: none;
-    border-radius: 10%;
-    box-shadow: rgba(101, 3, 34, 0.708) 2px 2px 10px 5px;
-    color: aliceblue;
+    transition: transform 80ms ease-in;
+    /* background-color: rgb(243, 222, 120); */
+    border-radius: 15px;
     font-weight: 100;
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     animation: glow infinite 1s;
   }
   
   .nav ul li a:hover {
-    background: #25f637fa;
-    border: 2px solid black;
-    transition: all ease 0.5s;
+    background: #460312fa;
+    border: 2px solid rgb(255, 145, 145);
+    transition: all ease 0.3s;
     position: static;
-    color: rgb(4, 8, 0);
-    box-shadow: rgb(255, 66, 45) 2px 2px 10px 5px;
+    color: rgb(235, 238, 231);
+    /* box-shadow: rgb(255, 66, 45) 2px 2px 10px 5px; */
   }
   .nav ul li input {
     padding: 5px;
-    background-color: rgb(243, 222, 120);
+    border-radius: 20px;
+    border: 2px solid #ff7861;
+    background-color: #6e1404;
+    color: #f4f4f4;
+    font-size: 12px;
+    font-weight: bold;
+    padding: 12px 12px;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    transition: transform 80ms ease-in;
+    /* background-color: rgb(243, 222, 120); */
     border-radius: 15px;
   }
+  .nav ul li input:hove {
+    padding: 5px;
+    border-radius: 20px;
+    border: 2px solid #ff7861;
+    background-color: #22012b;
+    color: #f4f4f4;
+    font-size: 12px;
+    font-weight: bold;
+    padding: 12px 12px;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    transition: transform 80ms ease-in;
+    /* background-color: rgb(243, 222, 120); */
+    border-radius: 15px;
+  }
+
   .search{
-    height: 30px;
-    margin: 10px;
+    /* height: 30px;
+    margin: 10px; */
+    font-size: 15px;
+    padding: 10px 10px;
+    margin: 0px 10px;
+    
     border-radius: 15px;
     aspect-ratio: 1/1;
   }
   .login{
-    padding: 5px;
-    border: 2px solid rgb(54, 3, 3);
-    border-radius: 2px;
-    margin: 10px;
-    border: none;
-    background-color: yellow;
-    box-shadow: inset 3px 3px 10px maroon;
+    border-radius: 20px;
+    border: 1px solid #FF4B2B;
+    background-color: #FF4B2B;
+    color: #FFFFFF;
+    font-size: 12px;
+    font-weight: bold;
+    padding: 12px 12px;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    transition: transform 80ms ease-in;
   }
   .login:hover{
-    border: 2px solid white;
-    padding: 5px;
-    color: white;
-    border-radius: 2px;
-    margin: 10px;
-    transition: ease .5s;
-    background-color: rgb(21, 5, 130);
-    box-shadow: inset 3px 3px 10px rgba(204, 202, 79, 0.719);
+    border-radius: 20px;
+    border: 1px solid #7bee00;
+    background-color: #600624;
+    color: #FFFFFF;
+    font-size: 12px;
+    font-weight: bold;
+    padding: 12px 12px;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    transition: transform 80ms ease-in;
   }
   .login::-moz-focus-inner{
     transform: scale(0.8);
@@ -452,7 +500,8 @@ cursor: pointer;
 .footerbox {
     color: white;
     max-width: 1440px;
-    background-color: rgb(18, 2, 2);
+    background-image: linear-gradient(to bottom, #360404, #2e0609, #27070c, #1f070d, #15070b);
+    /* background-color: rgb(18, 2, 2); */
     /* margin: 0 auto; */
     padding: 0 calc(17.8px + 2rem);
   }
