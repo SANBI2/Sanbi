@@ -4,6 +4,11 @@
 }
 
 /* =======================HEADING================================= */
+.nav{
+  position: sticky;
+  top: 0;
+  z-index: 1;
+}
 .nav ul {
     display: flex;
     padding: 1vw;
@@ -40,7 +45,8 @@ cursor: pointer;
   }
   
   .nav ul li a:hover {
-    background: #aa89dc;
+    background: #25f637fa;
+    border: 2px solid black;
     transition: all ease 0.5s;
     position: static;
     color: rgb(4, 8, 0);
@@ -59,22 +65,27 @@ cursor: pointer;
   }
   .login{
     padding: 5px;
-    border-radius: 10px;
+    border: 2px solid rgb(54, 3, 3);
+    border-radius: 2px;
     margin: 10px;
     border: none;
     background-color: yellow;
     box-shadow: inset 3px 3px 10px maroon;
   }
   .login:hover{
+    border: 2px solid white;
     padding: 5px;
     color: white;
-    border-radius: 10px;
+    border-radius: 2px;
     margin: 10px;
     transition: ease .5s;
     background-color: rgb(21, 5, 130);
     box-shadow: inset 3px 3px 10px rgba(204, 202, 79, 0.719);
   }
-
+  .login::-moz-focus-inner{
+    transform: scale(0.8);
+    
+  }
   .menu img {
     height: 50px;
     display: block;
@@ -93,10 +104,13 @@ cursor: pointer;
     background-image: url(img/banner2.png);
     background-size: cover;
     box-shadow: 10px 10px 50px #010a15 ;
+    align-items: center;
+    text-align: center;
   
   }
   .homecontainer{
     padding-top: 10%;
+    text-align: center;
     justify-content: center;
     align-items: center;
     align-self: center;
@@ -106,7 +120,7 @@ cursor: pointer;
     font-family: 'Fira Code', monospace;
     font-weight: 800;
     font-size: 25px;
-    margin: 0 0 0 15%;
+    margin: 10vh 0 0 15%;
     text-align: left;
     white-space: nowrap;
     overflow: hidden;
@@ -263,21 +277,21 @@ cursor: pointer;
     height: 100%;
     -webkit-backface-visibility: hidden;
     backface-visibility: hidden;
-    border: 1px solid rgba(255, 255, 255, 0.8);
+    border: 1px solid rgba(196, 34, 34, 0.8);
     border-radius: 1rem;
     color: white;
-    box-shadow: 0 0 0.3em rgba(255, 255, 255, 0.5);
+    box-shadow: 0 0 0.3em rgba(137, 4, 4, 0.633);
     font-weight: 600;
   }
   
   .frontSide,
   .frontSide::before {
-    background: linear-gradient(43deg, rgb(65, 88, 208) 0%, rgb(200, 80, 192) 46%, rgb(255, 204, 112) 100%);
+    background: linear-gradient(43deg, rgb(8, 16, 55) 0%, rgb(3, 34, 106) 46%, rgb(53, 35, 3) 100%);
   }
   
   .backSide,
   .backSide::before {
-    background-image: linear-gradient(160deg, #0093E9 0%, #80D0C7 100%);
+    background-image: linear-gradient(160deg, #174e6d 0%, #0c584f 100%);
   }
   
   .backSide {
