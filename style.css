@@ -142,7 +142,21 @@ cursor: pointer;
     height: 10%;
   }
   
-
+@media only screen and (max-width:600px){
+  .nav {
+    display: none;
+  }
+  .small-nav {
+   background-color: #010a15;
+      }
+  .small-nav li {
+display: none;
+  }
+  .small-nav ul img {
+    height: 40px;
+    padding: 5px;
+      }
+}
 
 
 /* =======================HOME================================= */
