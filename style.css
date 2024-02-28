@@ -127,7 +127,7 @@
 .login:hover {
   border-radius: 20px;
   border: 1px solid #7bee00;
-  background-color: #600624;
+  background-color: #700624;
   color: #FFFFFF;
   font-size: 12px;
   font-weight: bold;
@@ -151,42 +151,148 @@ li a img {
   height: 10%;
 }
 
-@media only screen and (max-width:600px) {
+@media only screen and (max-width:700px) {
   .nav {
     display: none;
   }
 
   .small-nav {
     background-color: #010a15;
-  }
-
-  .small-nav li {
-    display: none;
-  }
-  .small-nav ul {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    position: sticky;
+    top: 0;
+    z-index: 1;
+    box-shadow: 7.5px 7.5px 20px -1px rgb(48, 14, 22);
   }
 
-  .small-nav ul img {
+  .small-nav img {
     height: 40px;
     padding: 5px;
   }
 
-  .small-nav ul i {
+  .small-nav i {
     align-self: center;
-    transform: scale(1.5);
+    transform: scale(2);
     margin-right: 15px;
     color: wheat;
     padding: 5px;
   }
+
+  .nav-links {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    height: 40%;
+    position: fixed;
+    gap: 15px;
+    background-color: #33021c;
+    color: red;
+    opacity: .5;
+    top: 10;
+    z-index: 1;
+    opacity: .8;
+    border-bottom-left-radius: 25%;
+    border-bottom-right-radius: 25%;
+    box-shadow: 7.5px 15px 20px -1px rgb(146, 6, 36);
+  }
+
+  .smallnavmenu {
+    display: flex;
+    text-decoration: none;
+    justify-content: space-around;
+    padding: 5px;
+  }
+
+  .smallnavmenu * {
+    color: white;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif0;
+    text-decoration: none;
+  }
+
+  .smallnavinputs * {
+    text-decoration: none;
+    justify-content: center;
+    padding: 10px;
+    border: 1px solid black;
+    border-radius: 20px;
+  }
+  .smallnavinputs *:hover {
+    color: wheat;
+    background-color: #370206;
+    border: 1px solid wheat;
+  }
+
+  .smallnavinputs {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .search {
+    padding: 0;
+    border: 2px solid rgb(26, 17, 0);
+    transform: scale(1);
+    background-color: rgba(252, 252, 252, 0.793);
+  }
+
+  .search i {
+    color: black;
+  }
+
+  .search:hover {
+    padding: 0;
+    border: 2px solid rgb(221, 169, 72);
+    transform: scale(1.1);
+    background-color: rgba(57, 3, 17, 0.793);
+  }
+
+  .search:hover i {
+    color: white;
+    transform: scale(1);
+  }
+
+  .smallnav-social-icons {
+    display: flex;
+    justify-content: space-around;
+  }
+
+  .smallnav-social-icons a {
+    transform: scale(.8);
+    padding: 0;
+    border: 1px solid black;
+  }
+
+  .smallnav-social-icons a:hover {
+    background-color: #000000;
+    border: 1px solid wheat;
+  }
+
+  .nav-links a {
+    background-color: hsl(0, 97%, 15%);
+    padding: 10px;
+    border: 1px solid black;
+    border-radius: 20px;
+    box-shadow: 5px 5px 20px -1px rgb(146, 6, 36);
+  }
+
+  .hamburger-button {
+    background: transparent;
+    border: transparent;
+    cursor: pointer;
+  }
 }
 
-@media only screen and (min-width:600px) {
+@media only screen and (min-width:700px) {
   .small-nav {
     display: none;
   }
+
+  .nav-links * {
+    display: none;
+  }
+
 }
 
 /* =======================HOME================================= */
@@ -235,21 +341,22 @@ li a img {
   overflow: hidden;
   animation: shring-animation 2.2s steps(40, end) 2s forwards, blink .5s step-end infinite alternate;
 }
-@media only screen and (max-width:600px) {
+
+@media only screen and (max-width:700px) {
   .homecontainer h1:nth-child(1) {
     color: #ffffff;
     font-family: 'Fira Code', monospace;
     font-weight: 800;
     font-size: 25px;
-    margin: 3vh 0 0 15%;
+    margin: 5vh 0 0 25vw;
     text-align: left;
     white-space: nowrap;
     overflow: hidden;
-    width: 200px;
+    width: 210px;
     animation: type 2s steps(40, end) forwards;
   }
-  
-  
+
+
   .homecontainer h1:nth-child(2) {
     opacity: 0;
     font-family: "Work Sans", sans-serif;
@@ -263,16 +370,17 @@ li a img {
     overflow: hidden;
     animation: shring-animation 2.2s steps(40, end) 2s forwards, blink .5s step-end infinite alternate;
   }
+
   #home {
-    height: 200px;
+    height: 50vh;
     background-color: #000000;
     background-image: url(img/banner2.png);
-    background-size: 600px;
+    background-size: 900px;
     background-repeat: no-repeat;
     box-shadow: 10px 10px 50px #010a15;
     align-items: center;
     text-align: center;
-  
+
   }
 }
 
@@ -424,7 +532,7 @@ ul li {
   border-radius: 1rem;
   color: white;
   box-shadow: 0 0 0.3em rgba(137, 4, 4, 0.633);
-  font-weight: 600;
+  font-weight: 700;
 }
 
 .frontSide,
