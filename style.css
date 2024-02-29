@@ -205,7 +205,6 @@ li a img {
   100%{
     right: 10;
   }
-    
   }
 
   .smallnavmenu {
@@ -291,6 +290,10 @@ li a img {
     background: transparent;
     border: transparent;
     cursor: pointer;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    
   }
 }
 
