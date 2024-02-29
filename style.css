@@ -182,7 +182,7 @@ li a img {
 
   .nav-links {
     width: 100%;
-    display: flex;
+    display: none;
     flex-direction: column;
     height: 40%;
     position: fixed;
@@ -190,12 +190,22 @@ li a img {
     background-color: #33021c;
     color: red;
     opacity: .5;
-    top: 10;
+    /* top: 10; */
     z-index: 1;
     opacity: .8;
     border-bottom-left-radius: 25%;
     border-bottom-right-radius: 25%;
+    animation: drop ease-in .1s;
     box-shadow: 7.5px 15px 20px -1px rgb(146, 6, 36);
+  }
+  @keyframes drop 
+  { 0%{
+    left: 0;
+  }
+  100%{
+    right: 10;
+  }
+    
   }
 
   .smallnavmenu {
