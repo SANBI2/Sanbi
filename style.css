@@ -287,14 +287,16 @@ li a img {
   }
 
   .hamburger-button {
-    background: transparent;
-    border: transparent;
-    cursor: pointer;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    
+    border: 2px solid wheat; 
   }
+}
+.hamburger-button span{
+  display: inlines;
+  display: inline-flex;
+  height: 25px;
+  width: 25px;
+
+  
 }
 
 @media only screen and (min-width:700px) {
