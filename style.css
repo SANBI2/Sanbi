@@ -288,21 +288,19 @@ li a img {
 
   .hamburger-button {
     background-color: #010a15;
-    border: 2px solid wheat; 
+    display: flex;
+    border: none;
+    flex-direction: column;
+    margin-right: 5px;
+    width: 33px;
+    height: 33px;
+    overflow: hidden;
   }
-}
-.hamburger-button span{
-  display: inlines;
-  display: inline-flex;
-  height: 25px;
-  width: 25px;  
-}
-.hamburger-button span i{
-  display: inlines;
-  display: inline-flex;
-  height: 25px;
-  color: white;
-  width: 25px;  
+
+  .hbtnspanopen {
+    padding: 5px;
+    transform: translateY(-35px); 
+  }
 }
 
 

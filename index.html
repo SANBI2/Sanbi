@@ -31,10 +31,10 @@
   <div class="small-nav">
     <img class="logo" src="img/Sb.png" alt="SANBI" class="logo">
     <button class="hamburger-button">
-      <span>
+      <span class="hbtnspanopen">
         <i class="fa fa-bars"></i>
       </span>
-      <span>
+      <span class="hbtnspanopen">
         <i class="fa fa-times"></i>
       </span>
     </button>
@@ -81,6 +81,17 @@
     document.querySelector('.hamburger-button').addEventListener('click', function () {
       document.querySelector('.nav-links').style.display =
         (document.querySelector('.nav-links').style.display == 'none') ? 'flex' : 'none';
+    });
+
+    // Get all the span elements with the hbtnspanopen class
+    const hambtnSpans = document.querySelectorAll('.hbtnspanopen');
+
+    // Add a click event listener to each of the span elements
+    hambtnSpans.forEach((span) => {
+      span.addEventListener('click', () => {
+        // Toggle the nbtnspanopen class on the span
+        span.classList.toggle('nbtnspanopen');
+      });
     });
   </script>
   </div>
