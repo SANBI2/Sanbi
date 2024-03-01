@@ -287,6 +287,7 @@ li a img {
   }
 
   .hamburger-button {
+    background-color: #010a15;
     border: 2px solid wheat; 
   }
 }
@@ -294,9 +295,7 @@ li a img {
   display: inlines;
   display: inline-flex;
   height: 25px;
-  width: 25px;
-
-  
+  width: 25px;  
 }
 
 @media only screen and (min-width:700px) {
