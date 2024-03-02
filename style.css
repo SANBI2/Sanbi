@@ -213,6 +213,10 @@ li a img {
     justify-content: space-around;
     padding: 5px;
   }
+  .smallnavmenu:hover *:hover{
+    background-color: rgba(33, 33, 1, 0.526);
+  }
+
 
   .smallnavmenu * {
     color: white;
@@ -269,7 +273,10 @@ li a img {
 
   .smallnav-social-icons a {
     transform: scale(.8);
+    transform: scale(1.2);
     padding: 0;
+    color: rgb(242, 242, 31);
+    background-color: red;
     border: 1px solid black;
   }
 
@@ -344,7 +351,7 @@ li a img {
   text-align: left;
   white-space: nowrap;
   overflow: hidden;
-  width: 200px;
+  width: 210px;
   animation: type 2s steps(40, end) forwards;
 }
 
@@ -356,32 +363,14 @@ li a img {
   font-weight: 800;
   font-size: 100px;
   width: 430px;
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
   overflow: hidden;
+  z-index: 1;
   animation: shring-animation 2.2s steps(40, end) 2s forwards, blink .5s step-end infinite alternate;
 }
-.glitch-wrapper {
-  width: 100%;
-  height: 100%;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  text-align: center;
-  background-color: #000000;
-}
 
-.glitch {
-  position: relative;
-  font-size: 50px;
-  font-weight: bold;
-  color: #FFFFFF;
-  letter-spacing: 3px;
-  z-index: 1;
-}
 
-.glitch:before,
-.glitch:after {
+.homecontainer h1:nth-child(2):before,
+.homecontainer h1:nth-child(2):after {
   display: block;
   content: attr(data-text);
   position: absolute;
@@ -390,13 +379,13 @@ li a img {
   opacity: 0.8;
 }
 
-.glitch:before {
+.homecontainer h1:nth-child(2):before {
   animation: glitch-it 0.3s cubic-bezier(0.25, 0.46, 0.45, 0.94) both infinite;
   color: #00FFFF;
   z-index: -1;
 }
 
-.glitch:after {
+.homecontainer h1:nth-child(2):after {
   animation: glitch-it 0.3s cubic-bezier(0.25, 0.46, 0.45, 0.94) reverse both infinite;
   color: #FF00FF;
   z-index: -2;
@@ -422,6 +411,7 @@ li a img {
      transform: translate(0);
   }
 }
+
 @media only screen and (max-width:700px) {
   .homecontainer h1:nth-child(1) {
     color: #ffffff;
