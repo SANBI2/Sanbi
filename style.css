@@ -184,10 +184,10 @@ li a img {
     width: 100%;
     display: none;
     flex-direction: column;
-    height: 40%;
+    height: 20%;
     position: fixed;
     gap: 15px;
-    background-color: #33021c;
+    background-color: #f185bf;
     color: red;
     opacity: .5;
     /* top: 10; */
@@ -195,8 +195,9 @@ li a img {
     opacity: .8;
     border-bottom-left-radius: 25%;
     border-bottom-right-radius: 25%;
+    border-bottom: 4px solid rgb(0, 0, 0);
     animation: drop ease-in .1s;
-    box-shadow: 7.5px 15px 20px -1px rgb(146, 6, 36);
+    box-shadow: 7.5px 15px 20px  rgb(93, 168, 8);
   }
   @keyframes drop 
   { 0%{
@@ -230,6 +231,7 @@ li a img {
     padding: 10px;
     border: 1px solid black;
     border-radius: 20px;
+    box-shadow: inset 3px 3px 5px grey;
   }
   .smallnavinputs *:hover {
     color: wheat;
@@ -283,6 +285,8 @@ li a img {
   .smallnav-social-icons a:hover {
     background-color: #000000;
     border: 1px solid wheat;
+    box-shadow: -2px -2px 5px black;
+    border-bottom: 2px  solid gold;
   }
 
   .nav-links a {
@@ -362,7 +366,7 @@ li a img {
   background: linear-gradient(to right, #f8b195, #f67280, #c06c84);
   font-weight: 800;
   font-size: 100px;
-  width: 430px;
+  width: 450px;
   overflow: hidden;
   z-index: 1;
   animation: shring-animation 2.2s steps(40, end) 2s forwards, blink .5s step-end infinite alternate;
@@ -523,8 +527,10 @@ li a img {
 .serviceheading {
   text-align: center;
   color: pink;
+  text-transform: uppercase;
   stroke: grey 20px;
-  font-size: 3rem;
+  font-size: 2rem;
+  padding-top: 1rem;
   font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
 }
 
@@ -598,7 +604,7 @@ ul li {
   height: 100%;
   -webkit-backface-visibility: hidden;
   backface-visibility: hidden;
-  border: 1px solid rgba(196, 34, 34, 0.8);
+  border: 1px solid rgba(160, 255, 27, 0.8);
   border-radius: 1rem;
   color: white;
   box-shadow: 0 0 0.3em rgba(137, 4, 4, 0.633);
@@ -607,12 +613,12 @@ ul li {
 
 .frontSide,
 .frontSide::before {
-  background: linear-gradient(43deg, rgb(8, 16, 55) 0%, rgb(3, 34, 106) 46%, rgb(53, 35, 3) 100%);
+  background: linear-gradient(43deg, rgb(94, 10, 90) 0%, rgb(31, 14, 78) 46%, rgb(53, 35, 3) 100%);
 }
 
 .backSide,
 .backSide::before {
-  background-image: linear-gradient(160deg, #174e6d 0%, #0c584f 100%);
+  background-image: linear-gradient(160deg, #5f0727 0%, #0c584f 100%);
 }
 
 .backSide {
