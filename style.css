@@ -164,7 +164,7 @@ li a img {
     position: sticky;
     top: 0;
     z-index: 1;
-    box-shadow: 7.5px 7.5px 20px -1px rgb(48, 14, 22);
+    box-shadow: 7.5px 7.5px 20px -1px rgb(49, 11, 20);
   }
 
   .small-nav img {
@@ -179,6 +179,147 @@ li a img {
     color: wheat;
     padding: 5px;
   }
+
+  /* .wrapper{
+    width:100px;
+    height:100px;
+    position: absolute;
+    left:50%;
+    top:50%;
+    transform: translate(-50%, -50%);
+} */
+.hamnav{
+    width:50px;
+    height: 32px;
+    position: absolute;
+    left:50%;
+    top:50%;
+    transform: translate(-50%, -50%);
+    padding: 0px;
+    background-color:transparent;
+    border-style:none;
+    outline: none;
+    cursor: pointer;
+    border-radius: 50%;
+}
+.hamnav span{
+    width:100%;
+    height:5px;
+    background-color:#cbf31a;
+    display:block;
+    position: absolute;
+    border-radius: 2px;
+    transition: all .5s ease;
+}
+.hamnav span:nth-child(1){
+    top:0px;
+    left:0px;
+}
+.hamnav span:nth-child(2){
+    top:20px;
+    right:0px;
+}
+.hamnav span:nth-child(3){
+    top:40px;
+    left:0px;
+}
+.hamnav.open span:nth-child(2){
+    animation: span2 .5s forwards cubic-bezier(.8, .5, .2, 1.4);
+}
+@keyframes span2{
+    0%{
+        transform: translate(0,0) scale(1);
+    }
+    20%{
+        width:5px;
+        border-radius: 50%;
+        transform: translate(0,0) scale(1);
+    }
+    40%{
+        width:5px;
+        border-radius: 50%;
+        transform: translate(0,0) scale(1);
+    }
+    50%{
+        width:5px;
+        border-radius: 50%;
+        transform: translate(0,18px) scale(1); 
+    }
+    80%{
+        width:5px;
+        border-radius: 50%;
+        transform: translate(0,-16px) scale(1);
+    }
+    100%{
+        width:5px;
+        border-radius: 50%;
+        transform: translate(0,100px) scale(0);
+    }
+}
+.hamnav.open span:nth-child(3){
+    animation: span3 .8s forwards cubic-bezier(.8, .5, .2, 1.4);
+    animation-delay: .5s;
+    transform: translateY(-5px);
+}
+@keyframes span3{
+    0%{
+        transform: translate(0,0);
+    }
+    60%{
+        transform: rotate(80deg) translate(-7px, -7px);
+    }
+    100%{
+        transform: rotate(45deg) translate(-7px, -7px);
+    }
+}
+.hamnav.open span:nth-child(1){
+    animation: span1 .8s forwards cubic-bezier(.8, .5, .2, 1.4);
+    animation-delay: 1.1s;
+}
+@keyframes span1{
+    0%{
+        transform: translate(0,0);
+    }
+    60%{
+        transform: rotate(-110deg) translate(-7px, -7px);
+    }
+    100%{
+        transform: rotate(-45deg) translate(-20px, 20px);
+    }
+}   
+.hamnav span:nth-child(1){
+    animation: span1_close .8s forwards cubic-bezier(.8, .5, .2, 1.4);
+}
+@keyframes span1_close {
+    0%{
+        transform: rotate(-45deg) translate(-20px, 20px);
+    }
+    100%{
+        transform: rotate(0deg) translate(0, 0);
+    }
+}
+.hamnav span:nth-child(2){
+    animation: span2_close .8s forwards cubic-bezier(.8, .5, .2, 1.4);
+}
+@keyframes span2_close{
+    0%{
+        transform: translate(0, 40px) scale(0);
+    }
+    100%{
+        transform: translate(0, 0) scale(1);
+    }
+}
+.hamnav span:nth-child(3){
+    animation: span3_close .8s forwards cubic-bezier(.8, .5, .2, 1.4);
+}
+@keyframes span3_close{
+    0%{
+        transform: rotate(45deg) translate(-7px, -7px);
+    }
+    100%{
+        transform: rotate(0deg) translate(0, 0);
+    }
+}
 
   .nav-links {
     width: 100%;
@@ -298,19 +439,15 @@ li a img {
   }
 
   .hamburger-button {
-    background-color: #010a15;
-    display: flex;
+    position: absolute;
+    background: transparent;;
     border: none;
-    flex-direction: column;
-    margin-right: 5px;
-    width: 33px;
-    height: 33px;
+    right: 0;
+    top: -10;
+    transform: scale(0.7);
+    width: 80px;
+    height: 80px;
     overflow: hidden;
-  }
-
-  .hbtnspanopen {
-    padding: 5px;
-    transform: translateY(-35px); 
   }
 }
 
@@ -351,7 +488,7 @@ li a img {
   font-family: 'Fira Code', monospace;
   font-weight: 800;
   font-size: 25px;
-  margin: 10vh 0 0 15%;
+  margin: 10vh 0 0 40%;
   text-align: left;
   white-space: nowrap;
   overflow: hidden;
@@ -362,13 +499,15 @@ li a img {
 .homecontainer h1:nth-child(2) {
   opacity: 0;
   font-family: "Work Sans", sans-serif;
-  margin: 0 0 0 15%;
+  margin: 0 0 0 28%;
   background: linear-gradient(to right, #f8b195, #f67280, #c06c84);
   font-weight: 800;
-  font-size: 100px;
-  width: 450px;
+  font-size: 70px;
+  width: 400px;
+  filter: drop-shadow(2px 2px 5px crimson);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
   overflow: hidden;
-  z-index: 1;
   animation: shring-animation 2.2s steps(40, end) 2s forwards, blink .5s step-end infinite alternate;
 }
 
@@ -438,7 +577,7 @@ li a img {
     background: linear-gradient(to right, #f8b195, #f67280, #c06c84);
     font-weight: 800;
     font-size: 50px;
-    width: 215px;
+    width: 355px;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     overflow: hidden;

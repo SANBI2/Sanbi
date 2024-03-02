@@ -29,14 +29,22 @@
   </div>
   <div class="small-nav">
     <img class="logo" src="img/Sb.png" alt="SANBI" class="logo">
-    <button class="hamburger-button">
-      <span class="hbtnspanopen">
+    <div class="hamburger-button">
+      <div class="wrapper">
+        <button class="hamnav">
+            <span></span>
+            <span></span>
+            <span></span>
+        </button>
+    </div>
+
+      <!-- <span class="hbtnspanopen">
         <i class="fa fa-bars"></i>
       </span>
       <span class="hbtnspanopen">
         <i class="fa fa-times"></i>
-      </span>
-    </button>
+      </span> -->
+    </div>
   </div>
   <div class="nav-links">
     <div class="smallnavmenu"><a href="#home">HOME</a>
@@ -57,21 +65,29 @@
     </div>
   </div>
   <script>
-    document.querySelector('.hamburger-button').addEventListener('click', function () {
-      document.querySelector('.nav-links').style.display =
-        (document.querySelector('.nav-links').style.display == 'none') ? 'flex' : 'none';
-    });
+const nav = document.querySelector('.hamnav');
+nav.addEventListener('click',(event) => {
+    nav.classList.toggle('open');
+    document.querySelector('.nav-links').style.display =
+        (document.querySelector('.nav-links').style.display == 'flex') ? 'none' : 'flex';
+});
 
-    // Get all the span elements with the hbtnspanopen class
-    const hambtnSpans = document.querySelectorAll('.hbtnspanopen');
 
-    // Add a click event listener to each of the span elements
-    hambtnSpans.forEach((span) => {
-      span.addEventListener('click', () => {
-        // Toggle the nbtnspanopen class on the span
-        span.classList.toggle('nbtnspanopen');
-      });
-    });
+    // document.querySelector('.hamburger-button').addEventListener('click', function () {
+    //   document.querySelector('.nav-links').style.display =
+    //     (document.querySelector('.nav-links').style.display == 'flex') ? 'none' : 'flex';
+    // });
+
+    // // Get all the span elements with the hbtnspanopen class
+    // const hambtnSpans = document.querySelectorAll('.hbtnspanopen');
+
+    // // Add a click event listener to each of the span elements
+    // hambtnSpans.forEach((span) => {
+    //   span.addEventListener('click', () => {
+    //     // Toggle the nbtnspanopen class on the span
+    //     span.classList.toggle('nbtnspanopen');
+    //   });
+    // });
   </script>
   </div>
 
