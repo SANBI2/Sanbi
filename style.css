@@ -276,8 +276,8 @@ li a img {
     transform: scale(1.2);
     padding: 0;
     color: rgb(242, 242, 31);
-    background-color: red;
-    border: 1px solid black;
+    background-color: rgba(255, 0, 0, 0.599);
+    border: 2px solid black;
   }
 
   .smallnav-social-icons a:hover {
@@ -844,6 +844,15 @@ footer a {
   display: flex;
   justify-content: space-between;
 }
+.social_icons a:hover {
+  transform: scale(1.1);
+  transition: ease 0.5s;
+}
+.social_icons a {
+  text-decoration: none;
+  transform: scale(0.8);
+  
+}
 
 .social_icons i {
   font-size: 2rem;
@@ -854,10 +863,9 @@ footer a {
   display: flex;
   align-items: center;
   justify-content: center;
-  border-radius: 5px;
-  transform: translateY(0);
+  border-radius: 15px;
   transition: all 0.5s ease-in-out;
-  color: #2976be;
+  color: #ff001e;
 }
 
 svg {
@@ -866,10 +874,6 @@ svg {
   padding: 5px;
 }
 
-.social_icons a:hover {
-  transform: scale(1.2);
-  transition: ease 0.5s;
-}
 
 /* second sections */
 .second_section ul {
@@ -908,16 +912,17 @@ svg {
   display: flex;
 }
 
-.third_section ul li:first-child {
-  margin-top: 0;
-}
-
 .third_section ul li i {
   margin-right: 10px;
-  background: #ddd;
-  border-radius: 5px;
+  background: #f560d24e;
+  border-radius: 25px;
   font-size: 1.2rem;
+  color: yellow;
   padding: 1rem;
+}
+.third_section ul li:hover i {
+  transform: scale(0.9);
+  transition: all 0.5s ease-in-out;
 }
 
 .third_section span {
