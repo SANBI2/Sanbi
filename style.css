@@ -909,7 +909,45 @@ ul li {
   position: relative;
   height: 80vh;
 }
-
+  /* Carousel container */
+  .carousel {
+    width: 100%;
+    overflow: hidden;
+    position: relative;
+  }
+  
+  /* Carousel items */
+  .carousel-item {
+    display: none;
+    float: left;
+    width: 100%;
+  }
+  
+  /* Show first item by default */
+  .carousel-item:first-child {
+    display: block;
+  }
+  
+  /* Previous and Next buttons */
+  .prev, .next {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    width: auto;
+    padding: 16px;
+    background-color: black;
+    color: white;
+    font-weight: bold;
+  }
+  
+  .prev {
+    left: 0;
+  }
+  
+  .next {
+    right: 0;
+  }
 /* =======================FOOTER================================ */
 
 .footerbox {
