@@ -919,10 +919,16 @@ ul li {
   /* Carousel items */
   .carousel-item {
     display: none;
+    width: 100vw;
     float: left;
     width: 100%;
   }
-  
+  .carousel-item img {
+    
+    width: 100vw;
+    float: left;
+    width: 100%;
+  }
   /* Show first item by default */
   .carousel-item:first-child {
     display: block;
