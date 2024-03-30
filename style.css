@@ -904,7 +904,6 @@ ul li {
 
 
 /* =======================MEDIA================================ */
-/* =======================MEDIA================================ */
 #media {
   padding: 2rem;
   position: relative;
@@ -912,10 +911,11 @@ ul li {
   background-image: url(img/media.jpg);
   background-position: center;
 }
-h1{
-  color: white;
+#media h1{
+  color: aqua;
+  text-shadow: 2px 2px 6px aqua,4px 4px 12px blue,0 0 18px white;
   text-align: center;
-  font-size: 3em;
+  font-size: 4em;
   font-weight: 2em;
 }
   /* Carousel container */
@@ -931,18 +931,30 @@ h1{
     width: 100vw;
     float: left;
     width: 100%;
+    color: #00fffb;
+    margin-top: 70px;
+    margin-right: 80px;
   }
   .carousel-item img {
-    
-    width: 100vw;
-    float: left;
-    width: 100%;
+  height: 210px;
+  margin-left: 80px;
   }
   /* Show first item by default */
   .carousel-item:first-child {
     display: block;
   }
-  
+  .carousel-item h2{
+   color: white;
+   font-size: 3em;
+   text-shadow: 3px 3px 9px aqua;
+   margin-left: 70px;
+  }
+  .carousel-item p{
+    color: wheat;
+     margin-left: 80px;
+     margin-top: 10px;
+     font-size: 1.3em;
+  }
   /* Previous and Next buttons */
   .prev, .next {
     cursor: pointer;
