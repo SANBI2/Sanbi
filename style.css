@@ -904,10 +904,19 @@ ul li {
 
 
 /* =======================MEDIA================================ */
+/* =======================MEDIA================================ */
 #media {
   padding: 2rem;
   position: relative;
   height: 80vh;
+  background-image: url(img/media.jpg);
+  background-position: center;
+}
+h1{
+  color: white;
+  text-align: center;
+  font-size: 3em;
+  font-weight: 2em;
 }
   /* Carousel container */
   .carousel {
